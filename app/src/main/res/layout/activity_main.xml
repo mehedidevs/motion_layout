@@ -6,6 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_margin="16dp"
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_margin="16dp"
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_margin="16dp"
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_margin="16dp"
+                android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
     <LinearLayout
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
         android:id="@+id/mainLayout"
@@ -16,26 +60,65 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
+        <ScrollView
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Inherit or create an instance of “RoundedBottomSheetDialogFragment.kt” for BottomSheetDialogs that you want to have rounded corners."
-            android:textSize="30dp" />
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inherit or create an instance of “RoundedBottomSheetDialogFragment.kt” for BottomSheetDialogs that you want to have rounded corners."
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:layout_margin="16dp"
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:layout_margin="16dp"
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:layout_margin="16dp"
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+                <ImageView
+                    android:layout_margin="16dp"
+                    android:src="@drawable/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"/>
+*
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="50dp"
+                    android:src="@mipmap/ic_launcher_round" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:src="@mipmap/ic_launcher_round" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
 
     </LinearLayout>
 
