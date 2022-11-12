@@ -1,15 +1,19 @@
 package com.cit.k_motion_lay1
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.TranslateAnimation
+import android.widget.FrameLayout
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 
 class MainActivity : AppCompatActivity() {
     private var isUp: Boolean = false
-    lateinit var mainLayout: LinearLayout
+    private lateinit var mainLayout: LinearLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,11 +21,23 @@ class MainActivity : AppCompatActivity() {
 
         mainLayout = findViewById(R.id.mainLayout)
 
-        mainLayout.setOnClickListener {
-            onSlideViewButtonClick(mainLayout)
+
+        BottomSheetBehavior.from(mainLayout).apply {
+            peekHeight = 200
+            this.state = BottomSheetBehavior.STATE_COLLAPSED
+
         }
 
 
+//        mainLayout.setOnClickListener {
+//            onSlideViewButtonClick(mainLayout)
+//        }
+
+
+    }
+
+    private fun justFun(name: String) {
+        Log.i("TAG", "onCreate: ${name}")
     }
 
     // slide the view from below itself to the current position
